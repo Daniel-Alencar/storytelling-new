@@ -106,7 +106,7 @@ function TriviaMethodGame() {
 const styles = {
   background: {
     // Substitua pelo caminho correto do fundo
-    backgroundImage: 'url(src/assets/MinigameTrivia/background_gameTrivia.webp)',
+    backgroundImage: 'url(https://img.notionusercontent.com/s3/prod-files-secure%2F0b17c14b-5d91-4d47-9f3b-c3bcf9937f6d%2F974b47c7-fcb1-446a-9d52-a1f74cffb49b%2Fbackground_gameTrivia.webp/size/w=2000?exp=1728700058&sig=HuWz0hIeM8RbQo172R51tudjZtNVvako6WZ_lsUQ0jc)',
     backgroundSize: 'cover',
     width: '100vw',
     height: '100vh',
