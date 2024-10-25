@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import backgroundIcon from '../../../assets/MinigameTrivia/background_game1.webp';
+
 const quizData = [
   {
     question: 'The Doppler effect is a phenomenon related to the change in wave frequency due to the relative motion between the source and the observer.',
@@ -106,7 +108,7 @@ function TriviaMethodGame() {
 const styles = {
   background: {
     // Substitua pelo caminho correto do fundo
-    backgroundImage: 'url(https://img.notionusercontent.com/s3/prod-files-secure%2F0b17c14b-5d91-4d47-9f3b-c3bcf9937f6d%2F974b47c7-fcb1-446a-9d52-a1f74cffb49b%2Fbackground_gameTrivia.webp/size/w=2000?exp=1728700058&sig=HuWz0hIeM8RbQo172R51tudjZtNVvako6WZ_lsUQ0jc)',
+    backgroundImage: `url(${backgroundIcon})`,
     backgroundSize: 'cover',
     width: '100vw',
     height: '100vh',

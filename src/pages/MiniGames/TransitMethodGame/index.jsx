@@ -2,6 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
 
+import starIcon from '../../../assets/MinigameTransito/star_game1.png';
+import backgroundIcon from '../../../assets/MinigameTransito/background_game1.webp';
+
 // Função para gerar luminosidade randomicamente para os corpos normais
 function getRandomLuminosity() {
   // Luminosidade varia entre 80 e 100
@@ -98,7 +101,7 @@ function TransitMethodGame() {
               top: positions[bodyIndex]?.top,
               opacity: bodyIndex === correctBody ? blinkingLuminosity / 100 : luminosity / 100,
               // Substitua com o caminho da sua imagem de estrela
-              backgroundImage: 'url(https://img.notionusercontent.com/s3/prod-files-secure%2F0b17c14b-5d91-4d47-9f3b-c3bcf9937f6d%2Fe2c499ad-15d8-4988-b788-b7e633f63241%2Fstar_game1.png/size/w=2000?exp=1728700020&sig=RPd3S3cA39qcgkI2oL3UY-HESYNH2xd31b9dHHsyM9A)', 
+              backgroundImage: `url(${starIcon})`, 
             }}
           ></div>
         ))}
@@ -112,7 +115,7 @@ function TransitMethodGame() {
 const styles = {
   background: {
     // Imagem de fundo
-    backgroundImage: 'url(https://img.notionusercontent.com/s3/prod-files-secure%2F0b17c14b-5d91-4d47-9f3b-c3bcf9937f6d%2F48164faa-5402-49b7-87cf-da68a76184df%2Fbackground_game1.webp/size/w=2000?exp=1728699930&sig=JcOYi3Cin0ChAjbWkcF9ayyFzgrfD6qBFoBObqQC0XE)',
+    backgroundImage: `url(${backgroundIcon})`,
     backgroundSize: 'cover',
     width: '100vw',
     height: '100vh',
